@@ -1,0 +1,39 @@
+POST http://localhost:8000/auth/signup
+Content-Type: application/json
+
+{ "username" : "juliana1", "password": "Password1234!", "email": "juana@gmail.com" }
+
+
+###
+
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{ "username" : "juliana1", "password": "Password1234!" }
+
+
+###
+
+
+GET http://localhost:8000/auth/test_token
+Content-Type: application/json
+Authorization: Token 15c2c93208f694b24568eb2ee703f842ff490a58
+
+{ }
+
+
+### 
+
+GET http://localhost:8000/books
+Content-Type: application/json
+
+{ }
+
+### 
+
+POST http://localhost:8000/books
+Content-Type: application/json
+
+{ "title" : "E o vento levou", "author" : "Algum autor" }
+
